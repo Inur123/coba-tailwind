@@ -113,3 +113,16 @@ const images = [
     
     // Ganti gambar setiap 5 detik
     setInterval(changeImage, 3000);
+
+    // banner
+    const closeButton = document.getElementById("closeBanner");
+    const banner = document.getElementById("banner");
+
+    closeButton.addEventListener("click", function () {
+        banner.style.display = "none"; // Hides the banner when the close button is clicked
+    });
+
+    // Optional: Automatically hide the banner after a few seconds
+    setTimeout(function () {
+        banner.style.display = "none";
+    }, 5000); // Hides the banner after 5 seconds
